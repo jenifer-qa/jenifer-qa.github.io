@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "10 Comandos basicos de Linux"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,43 +8,104 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
-A data-driven personal website
+pwd - Print Working Directory.
 ======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+El comando, pwd, significa "Directorio de trabajo de impresión". Esencialmente, escribes ese comando, y te dará la ruta de archivo exacta para el archivo o carpeta en la que estás.
 
-Getting started
+cd - Change directory 
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+Esto significa "cambiar de directorio" o, en términos más simples, cambiar en qué carpeta estamos.
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+Al usar el comando, cd, podemos decirle en qué dirección moverse añadiendo más al comando.
 
-**Markdown generator**
+cd or cd ~  - Nos lleva al directorio principal.
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+cd < folder name> - Nos lleva un paso adelante a la carpeta que se ha escrito.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+cd ..- Nos lleva un nivel atrás a la carpeta padre.
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+cd ../..- Nos mueve hacia atrás dos niveles. Agrega más /... para cada nivel en el que queramos navegar hacia arriba.
 
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+Al escribir el nombre de una carpeta o un archivo, y está sólo un paso por delante, puedes pulsar "Tab" y se rellenará automáticamente en la carpeta/nombre de archivo.
+
+ls
+======
+
+Ahora que estamos en una carpeta, puede que queramos ver lo que hay en esa carpeta. Al ejecutar el comando, ls, nos mostrará todo lo que hay en esa carpeta.
+
+clear
+======
+Este comando hace exactamente lo que suena; "limpia" su terminal. A veces es más fácil hacer borrón y cuenta nueva cuando se intenta enfocar.
+
+mkdir
+======
+Si hiciéramos clic con el botón derecho del ratón directamente en la vista del escritorio, aparecería ese pequeño menú, podríamos hacer clic en "Nueva carpeta", y entonces aparecería una nueva carpeta para que le pongamos un nombre. Este comando hace esa misma funcionalidad.
+
+mkdir significa "Hacer directorio" o simplemente, hacer una nueva carpeta.
+
+Desde donde sea que se ejecute este comando, creará la nueva carpeta en ese lugar. Así que navega a la ubicación deseada usando comandos cd, y luego escribe             mkdir <folder name>
+mkdir <nombre de la carpeta>.
+
+Para entrar en esa nueva carpeta, ejecutaríamos el comando: cd <folder name>.
+
+
+touch 
+======
+Ahora que sabemos cómo crear una carpeta, vamos a crear algunos archivos dentro de esa carpeta. Si siguiéramos los comandos anteriores:
+
+1.	mkdir new-folder
+2.	cd new-folder
+
+
+Ahora deberíamos estar en el directorio/carpeta "nueva carpeta". Vamos a crear un archivo dentro de esa carpeta. Ejecutando el siguiente comando, eso crearía un archivo:
+
+touch new-file - este no tiene extensión, así que querríamos añadir .html, `.txt`, o cualquier otra extensión necesaria.
+
+open 
+======
+Abrir un archivo o una carpeta escribiendo el comando:
+
+open <folder/file name>
+
+history 
+======
+¿Quiere saber todos los comandos que se han ejecutado en la sesión de terminal actual? Ejecute el comando, el history para verlos.
+
+¡Otro truco! Usa las flechas "arriba" y "abajo" para navegar a través de los comandos anteriores.
+
+¿Quieres limitar el número de comandos que muestra? Añade un número al comando: "Historia 10" mostraría los últimos 10 comandos escritos.
+
+cat
+======
+Este comando nos permite ver el contenido de un archivo en particular. Necesitaríamos declarar el archivo en particular para que este comando funcione.
+
+Si conocemos la ruta de acceso al archivo, podríamos ejecutarlo:
+
+cat /Desktop/new-folder/new-file
+
+O podríamos navegar desde nuestra carpeta de inicio a la carpeta nueva y luego ejecutar el comando.
+
+1.	cd Desktop
+2.	cd new-folder
+3.	cat new-file
+
+say 
+======
+Este es uno divertido. No es necesario para la navegación, pero hace que tu ordenador te hable.
+
+Escriba: say "anything here"
+diga "cualquier cosa aquí" y su ordenador dirá eso. ¡No olvides las citas de este comando!
+
+¡Bonus Tip!
+======
+¿Quieres cambiar la Terminal para que se parezca a la Matriz? ¿Fondo negro, letras verdes?
+
+En la esquina superior izquierda de la pantalla, haga clic donde dice "Terminal".
+Haga clic en "Preferencias..."
+Haga clic en "Perfiles"
+En la lista de la izquierda, haz clic en "Homebrew Default"
+Haga clic en "Por defecto" en la parte inferior.
+Salga de la terminal y vuelva a abrirla para ver esos cambios. Ahora podemos codificar y lucir bien cuando nuestros amigos miren sobre nuestro hombro para ver qué es lo que estamos haciendo. Uh, sólo estamos haciendo carpetas y borrándolas, ¡pero ellos no lo saben! 🙂
