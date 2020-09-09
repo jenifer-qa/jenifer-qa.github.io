@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "es-CO"
+locale                   : "es-AR"
 title                    : "Tester QA"
 title_separator          : "-"
 name                     : &name "Jenifer Blandón"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Jenifer Blandón"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Estudiante de ingeniería de sistemas apasionada por el testing QA"
+  location         : "Argentina"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : "@jenifer_blandon"
   vine             :
   weibo            :
   xing             :
