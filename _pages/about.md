@@ -1,12 +1,13 @@
 ---
 permalink: /
-title: "10 Comandos basicos de Linux"
+title: "<span style="color:purple">10 Comandos basicos de Linux</span>"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
 
 
 pwd - Print Working Directory.
