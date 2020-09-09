@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "<span style="color:purple">10 Comandos basicos de Linux</span>"
+title: "10 Comandos basicos de Linux"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
