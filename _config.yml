@@ -10,7 +10,7 @@ locale                   : "es-AR"
 title                    : "Analista Funcional QA"
 title_separator          : "-"
 name                     : &name "Jenifer Blandón"
-description              : &description "Estudiante de ingeniería de sistemas apasionada por el testing QA"
+description              : &description "Estudiante de ingeniería de sistemas apasionada por la calidad del software"
 url                      : https://jenifer-qa.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jenifer-qa/jenifer-qa.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Jenifer Blandón"
   avatar           : "profile.png"
-  bio              : "Estudiante de ingeniería de sistemas apasionada por el testing QA"
+  bio              : "Estudiante de ingeniería de sistemas apasionada por la calidad del software"
   location         : "Argentina"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
