@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "es-AR"
-title                    : "Tester QA"
+title                    : "Analista Funcional QA"
 title_separator          : "-"
 name                     : &name "Jenifer Blandón"
 description              : &description "Estudiante de ingeniería de sistemas apasionada por el testing QA"
