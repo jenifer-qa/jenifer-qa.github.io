@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-# Procedimiento
+## Procedimiento
 
 1. __Toma de requisitos__
 2. __Requerimientos__
@@ -39,14 +39,14 @@ _Ejemplo_: un cliente ingresa a ver un prodecto, ese producto no puede tardar en
 
 
 ## 3. Crear los casos de usos
-Vamos a describir funcionalidades que implica y lo vamos a hacer a detalle. 
+Vamos a describir las funcionalidades que implica y lo vamos a hacer a detalle. 
 
 ## 4. Modelo de datos
 Descripcion de las entidades que vamos almacenar.
 
 _Ejemplo_
-
 __Usuario__: nombre, Apellido, Dni, dirección, contrseña.
+
 __Producto__: titulo, nombre, descripción, tamaño, color.
 
 
